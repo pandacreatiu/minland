@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self' data: gap: https://ssl.gstatic.com 'unsafe-eval'; style-src 'self' 'unsafe-inline'; media-src *">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="msapplication-tap-highlight" content="no">
+    <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width">
+    
+    <title>Miniland</title>
+
+     <script type="text/javascript" src="js/jquery-2.2.0.min.js"></script>
+    
+    <link rel="stylesheet" type="text/css" href="css/index.css">
+
+    <link rel="import" href="contingut.html">
+
+</head>
+<body>
+
+
+<div id="mycustomhtml">
+    <br/><br/>
+</div>
+
+
+<div class="app">
+    
+    <div id="deviceready" class="blink">
+        <p class="event listening">Connecting to Device</p>
+        <p class="event received">Device is Ready</p>
+    </div>
+    
+</div>
+
+
+<script type="text/javascript" src="cordova.js"></script>
+<script type="text/javascript" src="js/index.js"></script>
+
+<script type="text/javascript">
+
+$('#mycustomhtml').load( "contingut.html" );
+
+</script>
+
+</body>
+</html>
