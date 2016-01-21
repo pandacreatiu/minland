@@ -51,38 +51,18 @@ var app = {
 app.initialize();
 
 
-    
-$(document).ready(main);
- 
-var contador = 1;
-var contador2 = 1;
 
-function main(){
-    $('.bt-menu').click(function(){
-        if(contador == 1){
-            if(contador2 == 0) {
-                contador2 = 1;
-                $('.nav_dre').animate({ right: '-100%' });
-            }
-            $('.nav_esq').animate({ left: '0' });
-            contador = 0;
-        } else {
-            contador = 1;
-            $('.nav_esq').animate({ left: '-100%' });
-        }
-    });
+/*
+  Slidemenu
+*/
+(function() {
+    var $body = document.body
+    , $menu_trigger = $body.getElementsByClassName('menu-trigger')[0];
 
-    $('.bt-menu2').click(function(){
-        if(contador2 == 1){
-            if(contador == 0) {
-                contador = 1;
-                $('.nav_esq').animate({ left: '-100%' });
-            }
-            $('.nav_dre').animate({ right: '0' });
-            contador2 = 0;
-        } else {
-            contador2 = 1;
-            $('.nav_dre').animate({ right: '-100%' });
-        }
-    });
-};
+    if ( typeof $menu_trigger !== 'undefined' ) {
+        $menu_trigger.addEventListener('click', function() {
+            $body.className = ( $body.className == 'menu-active' )? '' : 'menu-active';
+        });
+    }
+
+}).call(this);
