@@ -47,18 +47,18 @@ body {
 
 
 /* ------------- */
-.menu_bar { display:block; height: 70px; width:100%; background:#024959; }
+.menu_bar { position: absolute; height: 70px; width:100%; background:#024959; }
     .bt-menu { position: absolute; left: 10px; top: 10px; color:#fff; text-decoration:none; font-weight: bold; font-size:25px; }
     .bt-menu2 { position: absolute; right: 10px; top: 10px; color:#fff; text-decoration:none; font-weight: bold; font-size:25px; }
 
-header .nav_esq { width:80%; max-width:300px; height:100%; left: -100%; margin:0; position: fixed; background:#024959; }
+header .nav_esq { width:80%; max-width:300px; height:100%; left: -100%; margin:70px 0 0 0; position: fixed; background:#ccc; }
     header .nav_esq ul { overflow:hidden; list-style:none; }
     header .nav_esq ul li { float:left; display:block; float:none; border-bottom:1px solid rgba(255,255,255, .3); }
     header .nav_esq ul li a { color:#fff; padding:20px; display:block; text-decoration:none; }
     header .nav_esq ul li span { margin-right:10px; }
     header .nav_esq ul li a:hover { background:#037E8C; }
 
-header .nav_dre { width:80%; max-width:300px; height:100%; right: -100%; margin:0; position: fixed; background:#024959; }
+header .nav_dre { width:80%; max-width:300px; height:100%; right: -100%; margin:70px 0 0 0; position: fixed; background:#ccc; }
     header .nav_dre ul { overflow:hidden; list-style:none; }
     header .nav_dre ul li { float:left; display:block; float:none; border-bottom:1px solid rgba(255,255,255, .3); }
     header .nav_dre ul li a { color:#fff; padding:20px; display:block; text-decoration:none; }
