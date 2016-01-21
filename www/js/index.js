@@ -49,3 +49,40 @@ var app = {
 };
 
 app.initialize();
+
+
+    
+$(document).ready(main);
+ 
+var contador = 1;
+var contador2 = 1;
+
+function main(){
+    $('.bt-menu').click(function(){
+        if(contador == 1){
+            if(contador2 == 0) {
+                contador2 = 1;
+                $('.nav_dre').animate({ right: '-100%' });
+            }
+            $('.nav_esq').animate({ left: '0' });
+            contador = 0;
+        } else {
+            contador = 1;
+            $('.nav_esq').animate({ left: '-100%' });
+        }
+    });
+
+    $('.bt-menu2').click(function(){
+        if(contador2 == 1){
+            if(contador == 0) {
+                contador = 1;
+                $('.nav_esq').animate({ left: '-100%' });
+            }
+            $('.nav_dre').animate({ right: '0' });
+            contador2 = 0;
+        } else {
+            contador2 = 1;
+            $('.nav_dre').animate({ right: '-100%' });
+        }
+    });
+};

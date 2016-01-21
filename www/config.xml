@@ -2,7 +2,7 @@
 
 <!-- config.xml reference: https://build.phonegap.com/docs/config-xml -->
 <widget xmlns     = "http://www.w3.org/ns/widgets"
-        xmlns:gap = "http://phonegap.com/ns/1.0"
+        xmlns:cdv="http://cordova.apache.org/ns/1.0"
         id        = "com.pandacreatiu.miniland"
         version   = "1.0.0">
 
@@ -13,9 +13,9 @@
     <author href="http://pandacreatiu.com" email="info@pandacreatiu.com"> Panda Creatiu </author>
 
     <!--
-        If you do not want any permissions to be added to your app, add the
-        following tag to your config.xml; you will still have the INTERNET
-        permission on your app, which PhoneGap requires.
+    If you do not want any permissions to be added to your app, add the
+    following tag to your config.xml; you will still have the INTERNET
+    permission on your app, which PhoneGap requires.
     -->
     <content src="index.html" />
 
