@@ -1,55 +1,75 @@
 <!DOCTYPE html>
 <html>
 <head>
+    <title>Miniland</title>
+    <meta charset="utf-8" />
+
     <meta http-equiv="Content-Security-Policy" content="default-src 'self' data: gap: https://ssl.gstatic.com 'unsafe-eval'; style-src 'self' 'unsafe-inline'; media-src *">
     <meta name="format-detection" content="telephone=no">
     <meta name="msapplication-tap-highlight" content="no">
     <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width">
-    
-    <title>Miniland</title>
+
+    <link type="text/css" href="css/index.css" rel="stylesheet" />
+    <link type="text/css" href="css/jquery.mmenu.all.css" rel="stylesheet" />
 
     <script type="text/javascript" src="js/jquery-2.2.0.min.js"></script>
+    <script type="text/javascript" src="js/jquery.mmenu.all.min.js"></script>
 
-    <link rel="stylesheet" type="text/css" href="css/index.css">
+    <script type="text/javascript">
+        jQuery(document).ready(function( $ ) {
+            $("#menu").mmenu({ });
+        
+            $("#menu2").mmenu({
+                "offCanvas": {
+                    "position": "right"
+                }
+            });
+        });
+    </script>
 
 </head>
 <body>
 
+<!-- The page -->
+<div class="page">
+    
+    <div class="header">
+        <a href="#menu" id="btmenu1"></a>
+        Demo
+        <a href="#menu2" id="btmenu2"></a>
+    </div>
+    
+    <div class="content">
+        <p>
+            <strong>CONTINGUT</strong><br />
+        </p>
+    </div>
 
-<nav id="slide-menu">
+</div>
+
+
+<!-- The menu -->
+<nav id="menu2">
     <ul>
-        <li class="timeline">Timeline</li>
-        <li class="events">Events</li>
-        <li class="calendar">Calendar</li>
-        <li class="sep settings">Settings</li>
-        <li class="logout">Logout</li>
+        <li><a href="/">Home2</a></li>
+        <li><a href="/about">About us2</a></li>
+        <li><a href="/contact">Contact2</a></li>
     </ul>
 </nav>
 
 
-<div id="content">
-    <div class="menu-trigger"></div>
-    <h1>iOS style sliding menu</h1>
-    <p>Here's an easy way to create an iOS style, side sliding menu.</p>
-</div>
-
-
-<!--
-<br/><br/> <br/><br/> <br/><br/> <br/><br/>
-<div id="mycustomhtml">
-    <br/><br/>
-</div>
--->
-
+<!-- The menu -->
+<nav id="menu">
+    <ul>
+        <li><a href="/">Home</a></li>
+        <li><a href="/about">About us</a></li>
+        <li><a href="/contact">Contact</a></li>
+    </ul>
+</nav>
 
 <script type="text/javascript" src="cordova.js"></script>
 <script type="text/javascript" src="js/index.js"></script>
 
-<script type="text/javascript">
-
-//$('#mycustomhtml').load( "contingut.html" );
-
-</script>
-
 </body>
 </html>
+
