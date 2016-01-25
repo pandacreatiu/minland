@@ -1,83 +1,76 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Miniland</title>
     <meta charset="utf-8" />
-
-    <meta http-equiv="Content-Security-Policy" content="default-src 'self' data: gap: https://ssl.gstatic.com 'unsafe-eval'; style-src 'self' 'unsafe-inline'; media-src *">
-    <meta name="format-detection" content="telephone=no">
-    <meta name="msapplication-tap-highlight" content="no">
-    <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width">
-
-    <link type="text/css" href="css/index.css" rel="stylesheet" />
-    <link type="text/css" href="css/jquery.mmenu.all.css" rel="stylesheet" />
+    <meta name="format-detection" content="telephone=no" />
+    <meta name="msapplication-tap-highlight" content="no" />
+    <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width, height=device-height, target-densitydpi=device-dpi" />
+    <link rel="stylesheet" type="text/css" href="css/index.css" />
+    <title>Miniland</title>
 
     <script type="text/javascript" src="js/jquery-2.2.0.min.js"></script>
-    <script type="text/javascript" src="js/jquery.mmenu.all.min.js"></script>
-
-    <script type="text/javascript">
-        jQuery(document).ready(function( $ ) {
-            $("#menu").mmenu({ });
-        
-            $("#menu2").mmenu({
-                "offCanvas": {
-                    "position": "right"
-                }
-            });
-        });
-    </script>
-
 </head>
 <body>
 
-<!-- The page -->
-<div class="page">
-    
-    <div class="header">
-        <a href="#menu" id="btmenu1"></a>
-        Demo
-        <a href="#menu2" id="btmenu2"></a>
-    </div>
-    
-    <div class="content">
-        <p>
-            <strong>CONTINGUT</strong><br />
-            <div class="app">
-                <h1>Apache Cordova</h1>
-                <div id="deviceready" class="blink">
-                    <p class="event listening">Connecting to Device</p>
-                    <p class="event received">Device is Ready</p>
-                </div>
-            </div>
+<div id="container">
+
+    <input id="toggle" type="checkbox"> <label for="toggle" id="toggle_label"> </label> 
+
+    <div class="content">      
+      
+        <!-- HEEADER =========================================  -->
+        <div class="header">
+            <div class="logo"> <img src="img/logo.png" height="59" width="345"> </div>
+            <div class="menu_idioma"> idioma </div>
+
+        </div>
         
-        </p>
+        Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Phasellus hendrerit. Pellentesque aliquet nibh nec urna. In nisi neque, aliquet vel, dapibus id, mattis vel, nisi. Sed pretium, ligula sollicitudin laoreet viverra, tortor libero sodales leo, eget blandit nunc tortor eu nibh. Nullam mollis. Ut justo. Suspendisse potenti.
+
+        Sed egestas, ante et vulputate volutpat, eros pede semper est, vitae luctus metus libero eu augue. Morbi purus libero, faucibus adipiscing, commodo quis, gravida id, est. Sed lectus. Praesent elementum hendrerit tortor. Sed semper lorem at felis. Vestibulum volutpat, lacus a ultrices sagittis, mi neque euismod dui, eu pulvinar nunc sapien ornare nisl. Phasellus pede arcu, dapibus eu, fermentum et, dapibus sed, urna.
+
+        Morbi interdum mollis sapien. Sed ac risus. Phasellus lacinia, magna a ullamcorper laoreet, lectus arcu pulvinar risus, vitae facilisis libero dolor a purus. Sed vel lacus. Mauris nibh felis, adipiscing varius, adipiscing in, lacinia vel, tellus. Suspendisse ac urna. Etiam pellentesque mauris ut lectus. Nunc tellus ante, mattis eget, gravida vitae, ultricies ac, leo. Integer leo pede, ornare a, lacinia eu, vulputate vel, nisl.
+
+        Suspendisse mauris. Fusce accumsan mollis eros. Pellentesque a diam sit amet mi ullamcorper vehicula. Integer adipiscing risus a sem. Nullam quis massa sit amet nibh viverra malesuada. Nunc sem lacus, accumsan quis, faucibus non, congue vel, arcu. Ut scelerisque hendrerit tellus. Integer sagittis. Vivamus a mauris eget arcu gravida tristique. Nunc iaculis mi in ante. Vivamus imperdiet nibh feugiat est.
+
+        Ut convallis, sem sit amet interdum consectetuer, odio augue aliquam leo, nec dapibus tortor nibh sed augue. Integer eu magna sit amet metus fermentum posuere. Morbi sit amet nulla sed dolor elementum imperdiet. Quisque fermentum. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Pellentesque adipiscing eros ut libero. Ut condimentum mi vel tellus. Suspendisse laoreet. Fusce ut est sed dolor gravida convallis. Morbi vitae ante. Vivamus ultrices luctus nunc. Suspendisse et dolor. Etiam dignissim. Proin malesuada adipiscing lacus. Donec metus. Curabitur gravida.
+
+    </div>
+
+
+    <div class="slide-menu">
+    <h1>Menu</h1>
+        <nav class="menu">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Products</a></li>
+            <li><a href="#">Services</a></li>
+            <li><a href="#">FAQ</a></li>
+            <li><a href="#">Register</a></li>
+            <li><a href="#">Sign In</a></li>
+        </nav>
     </div>
 
 </div>
 
 
-<!-- The menu -->
-<nav id="menu2">
-    <ul>
-        <li><a href="/">Home2</a></li>
-        <li><a href="/about">About us2</a></li>
-        <li><a href="/contact">Contact2</a></li>
-    </ul>
-</nav>
-
-
-<!-- The menu -->
-<nav id="menu">
-    <ul>
-        <li><a href="/">Home</a></li>
-        <li><a href="/about">About us</a></li>
-        <li><a href="/contact">Contact</a></li>
-    </ul>
-</nav>
+<!--
+<div class="app">
+    <h1>Apache Cordova</h1>
+    <div id="deviceready" class="blink">
+        <p class="event listening">Connecting to Device</p>
+        <p class="event received">Device is Ready</p>
+    </div>
+</div>
+-->
 
 <script type="text/javascript" src="cordova.js"></script>
 <script type="text/javascript" src="js/index.js"></script>
 
+<script type="text/javascript">
+$(window).ready(function() {
+console.log('123');
+});
+</script>
+
 </body>
 </html>
-
