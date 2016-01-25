@@ -1,76 +1,58 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <meta charset="utf-8" />
-    <meta name="format-detection" content="telephone=no" />
-    <meta name="msapplication-tap-highlight" content="no" />
-    <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width, height=device-height, target-densitydpi=device-dpi" />
-    <link rel="stylesheet" type="text/css" href="css/index.css" />
-    <title>Miniland</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    <title>MINILAND</title>
+    <link rel="shortcut icon" href="favicon.ico">
+    
+    <link rel="stylesheet" href="jquery.mobile-1.4.5.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Open+Sans:300,400,700">
 
-    <script type="text/javascript" src="js/jquery-2.2.0.min.js"></script>
+    <script src="js/jquery.js"></script>
+    <!-- <script src="js/index.js"></script> -->
+    <script src="js/jquery.mobile-1.4.5.min.js"></script>
+
 </head>
 <body>
+<div data-role="page" class="jqm-demos jqm-panel-page" data-quicklinks="true">
 
-<div id="container">
 
-    <input id="toggle" type="checkbox"> <label for="toggle" id="toggle_label"> </label> 
+    <div data-role="header" class="header" style="background-color: #66A5A5;">
 
-    <div class="content">      
-      
-        <!-- HEEADER =========================================  -->
-        <div class="header">
-            <div class="logo"> <!--<img src="img/logo.png" height="59" width="345"> --> </div>
-            <div class="menu_idioma"> idioma </div>
+        <div><a href="#leftpanel2" class="bt_left_panel"> <img src="images/bt_menu.png" height="30" width="37"></a></div>
+        <div><a href="#rightpanel2" class="bt_right_panel"> <img src="images/lang.png" height="44" width="53"> </a> </div>
 
-        </div>
-        
-        Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Phasellus hendrerit. Pellentesque aliquet nibh nec urna. In nisi neque, aliquet vel, dapibus id, mattis vel, nisi. Sed pretium, ligula sollicitudin laoreet viverra, tortor libero sodales leo, eget blandit nunc tortor eu nibh. Nullam mollis. Ut justo. Suspendisse potenti.
+        <div class="logo"> <img src="images/logo.png" height="59" width="345"> </div>
 
-        Sed egestas, ante et vulputate volutpat, eros pede semper est, vitae luctus metus libero eu augue. Morbi purus libero, faucibus adipiscing, commodo quis, gravida id, est. Sed lectus. Praesent elementum hendrerit tortor. Sed semper lorem at felis. Vestibulum volutpat, lacus a ultrices sagittis, mi neque euismod dui, eu pulvinar nunc sapien ornare nisl. Phasellus pede arcu, dapibus eu, fermentum et, dapibus sed, urna.
 
-        Morbi interdum mollis sapien. Sed ac risus. Phasellus lacinia, magna a ullamcorper laoreet, lectus arcu pulvinar risus, vitae facilisis libero dolor a purus. Sed vel lacus. Mauris nibh felis, adipiscing varius, adipiscing in, lacinia vel, tellus. Suspendisse ac urna. Etiam pellentesque mauris ut lectus. Nunc tellus ante, mattis eget, gravida vitae, ultricies ac, leo. Integer leo pede, ornare a, lacinia eu, vulputate vel, nisl.
+    </div><!-- /header -->
 
-        Suspendisse mauris. Fusce accumsan mollis eros. Pellentesque a diam sit amet mi ullamcorper vehicula. Integer adipiscing risus a sem. Nullam quis massa sit amet nibh viverra malesuada. Nunc sem lacus, accumsan quis, faucibus non, congue vel, arcu. Ut scelerisque hendrerit tellus. Integer sagittis. Vivamus a mauris eget arcu gravida tristique. Nunc iaculis mi in ante. Vivamus imperdiet nibh feugiat est.
+    <div role="main" class="ui-content jqm-content">
 
-        Ut convallis, sem sit amet interdum consectetuer, odio augue aliquam leo, nec dapibus tortor nibh sed augue. Integer eu magna sit amet metus fermentum posuere. Morbi sit amet nulla sed dolor elementum imperdiet. Quisque fermentum. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Pellentesque adipiscing eros ut libero. Ut condimentum mi vel tellus. Suspendisse laoreet. Fusce ut est sed dolor gravida convallis. Morbi vitae ante. Vivamus ultrices luctus nunc. Suspendisse et dolor. Etiam dignissim. Proin malesuada adipiscing lacus. Donec metus. Curabitur gravida.
+            
+    </div><!-- /content -->
 
+
+    <!-- panels =================================================== -->
+
+    <!-- leftpanel2  -->
+    <div data-role="panel" id="leftpanel2" data-position="left" data-display="push" data-theme="a">
+        <h3>Left Panel: Push</h3>
+        <p>This panel is positioned on the left with the push display mode. The panel markup is <em>after</em> the header, content and footer in the source order.</p>
+        <p>To close, click off the panel, swipe left or right, hit the Esc key, or use the button below:</p>
     </div>
 
-
-    <div class="slide-menu">
-    <h1>Menu</h1>
-        <nav class="menu">
-            <li><a href="#">Home</a></li>
-            <li><a href="#">Products</a></li>
-            <li><a href="#">Services</a></li>
-            <li><a href="#">FAQ</a></li>
-            <li><a href="#">Register</a></li>
-            <li><a href="#">Sign In</a></li>
-        </nav>
+    <!-- rightpanel2  -->
+    <div data-role="panel" id="rightpanel2" data-position="right" data-display="push" data-theme="b">
+        <h3>Right Panel: Push</h3>
+        <p>This panel is positioned on the right with the push display mode. The panel markup is <em>after</em> the header, content and footer in the source order.</p>
+        <p>To close, click off the panel, swipe left or right, hit the Esc key, or use the button below:</p>
     </div>
 
 </div>
-
-
-<!--
-<div class="app">
-    <h1>Apache Cordova</h1>
-    <div id="deviceready" class="blink">
-        <p class="event listening">Connecting to Device</p>
-        <p class="event received">Device is Ready</p>
-    </div>
-</div>
--->
-
-<script type="text/javascript" src="cordova.js"></script>
-<script type="text/javascript" src="js/index.js"></script>
-
-<script type="text/javascript">
-$(window).ready(function() {
-console.log('123');
-});
-</script>
 
 </body>
 </html>
