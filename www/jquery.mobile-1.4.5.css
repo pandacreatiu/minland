@@ -951,7 +951,7 @@ html body .ui-group-theme-a .ui-bar-inherit {
 .ui-overlay-a,
 .ui-page-theme-a,
 .ui-page-theme-a .ui-panel-wrapper {
-	background-color: 			#f9f9f9 /*{a-page-background-color}*/;
+	background-color: 			#fff /*{a-page-background-color}*/;
 	border-color:	 		#bbb /*{a-page-border}*/;
 	color: 					#333 /*{a-page-color}*/;
 	text-shadow: 0 /*{a-page-shadow-x}*/ 1px /*{a-page-shadow-y}*/ 0 /*{a-page-shadow-radius}*/ 	#f3f3f3 /*{a-page-shadow-color}*/;
@@ -4447,7 +4447,7 @@ html .ui-popup .ui-field-contain > label + .ui-flipswitch {
 		display: block;
 		padding: .4em 0;
 		margin: .4em 0;
-		text-transform: uppercase;
+		/*text-transform: uppercase;*/
 		font-size: .9em;
 		font-weight: normal;
 	}
@@ -4485,7 +4485,7 @@ html .ui-popup .ui-field-contain > label + .ui-flipswitch {
 }
 /* Panel */
 .ui-panel {
-	width: 17em;
+	width: 19em;
 	min-height: 100%;
 	max-height: none;
 	border-width: 0;
@@ -4516,7 +4516,7 @@ html .ui-popup .ui-field-contain > label + .ui-flipswitch {
 	z-index: 1001; /* Fixed toolbars have z-index 1000 */
 }
 .ui-panel-inner {
-	padding: 1em;
+	/*padding: 1em;*/
 }
 /* Container, page and wrapper */
 .ui-panel-page-container {
@@ -4577,15 +4577,15 @@ html .ui-popup .ui-field-contain > label + .ui-flipswitch {
 /* Panel positioning (for overlay and push) */
 /* Panel left closed */
 .ui-panel-position-left {
-	left: -17em;
+	left: -19em;
 }
 /* Panel left closed animated */
 .ui-panel-animate.ui-panel-position-left.ui-panel-display-overlay,
 .ui-panel-animate.ui-panel-position-left.ui-panel-display-push {
 	left: 0;
-	-webkit-transform: translate3d(-17em,0,0);
-	-moz-transform: translate3d(-17em,0,0);
-	transform: translate3d(-17em,0,0);
+	-webkit-transform: translate3d(-19em,0,0);
+	-moz-transform: translate3d(-19em,0,0);
+	transform: translate3d(-19em,0,0);
 }
 /* Panel left open */
 .ui-panel-position-left.ui-panel-display-reveal, /* Unset "panel left closed" for reveal */
@@ -4633,9 +4633,9 @@ html .ui-popup .ui-field-contain > label + .ui-flipswitch {
 .ui-panel-animate.ui-panel-page-content-position-left {
 	left: 0;
 	right: 0;
-	-webkit-transform: translate3d(17em,0,0);
-	-moz-transform: translate3d(17em,0,0);
-	transform: translate3d(17em,0,0);
+	-webkit-transform: translate3d(19em,0,0);
+	-moz-transform: translate3d(19em,0,0);
+	transform: translate3d(19em,0,0);
 }
 /* Panel right open */
 .ui-panel-page-content-position-right {

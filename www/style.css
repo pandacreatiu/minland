@@ -4,22 +4,81 @@ body {
     -webkit-touch-callout: none;                /* prevent callout to copy image, etc when tap to hold */
     -webkit-text-size-adjust: none;             /* prevent webkit from resizing text to fit */
     -webkit-user-select: none;                  /* prevent copy paste, to allow, change 'none' to 'text' */
-    /*background-color:#E4E4E4;*/
-    /*background-image:linear-gradient(top, #A7A7A7 0%, #E4E4E4 51%);
-    background-image:-webkit-linear-gradient(top, #A7A7A7 0%, #E4E4E4 51%);
-    background-image:-ms-linear-gradient(top, #A7A7A7 0%, #E4E4E4 51%);
-    background-image:-webkit-gradient( linear, left top, left bottom, color-stop(0, #A7A7A7),color-stop(0.51, #E4E4E4) );*/
     background-attachment:fixed;
     font-size:12px;
     height:100%;
     margin:0px;
     padding:0px;
-    text-transform:uppercase;
     width:100%;
 }
 
+.title{ text-align: center; font-size: 25px; margin-top: 15px; }
+.subtitle{ text-align: center; font-size: 20px; color: #4E4E4E; margin-top: 15px; }
 
-.header{ width: 100%; height: 104px; background-color: #66A5A5; }
+/* center div variable width */
+.outer{ position: relative; left: 50%; float: left; }
+.inner { position: relative; left: -50%; float: left; }
+
+
+.header{ width: 100%; height: 103px; background-color: #66A5A5; }
     .bt_left_panel{ position: absolute; z-index: 99; left: 30px; top: 36px; }
     .bt_right_panel{ position: absolute; z-index: 99;  right: 30px; top: 30px; }
     .logo{ position: relative; text-align: center; margin-top: 20px; }
+
+
+/* MENU  eMyBaby -------------- */
+.menu_logo{ text-align: center; border-bottom: 1px solid #D6D6D6; padding: 36px 0; }
+
+.menu_baby_item{ clear: both; border-bottom: 1px solid #D6D6D6; height: 53px; }
+    .menu_baby_img{ float: left; }
+    .menu_baby_txt{ float: left; margin-left: 10px; margin-top: 20px; }
+    .menu_baby_marca{ float: right; margin-right: 10px; margin-top: 15px; }
+
+/* MENU idiomes -------------- */
+.menu_idiomas{ webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; padding: 20px; }
+
+.item_idioma{ clear: both; cursor: pointer; padding: 20px; }
+    .item_idioma_flag{ float: left; }
+    .item_idioma_txt{ float: left; margin-left: 10px; margin-top: 4px; }
+
+
+.video { width: 100%; max-width: 1200px;  margin: 50px auto; }
+.video video{ width: 100%; height: auto; margin-left: -12px; }
+
+
+/* footer ---------------------- */
+.footer_txt{ color: #fff; text-align: center; padding: 14px 0; font-size: 15px; font-weight: lighter; }
+
+
+/* PANTALLA + TABLET ----------------------------------------------------------- */
+/*@media only screen and (min-width: 764px) {*/
+
+    .container{ width: 100%; /*max-width: 1024px;*/ margin: auto; background-color: #fff; }
+
+    .col{ webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; }
+    
+    .col33{ float: left; width: 33.333%; padding: 0 10px; }
+        .col33_esq{ float: left; width: 33.333%; padding: 0 20px 0 10px; }
+        .col33_centre{ float: left; width: 33.333%; padding: 0 20px; }
+        .col33_dre{ float: left; width: 33.333%; padding: 0 10px 0 20px; }
+        .col33_dre2{ float: right; width: 33.333%; padding: 0 10px 0 20px; }
+    
+    .col66{ float: left; width: 66.666%; padding: 0 10px; }
+        .col66_esq{ float: left; width: 66.666%; padding: 0 20px 0 10px; }
+        .col66_dre{ float: left; width: 66.666%; padding: 0 10px 0 20px; }
+            
+            .col66_50_esq{ float: left; width: 50%; padding-right: 20px; }
+            .col66_50_dre{ float: left; width: 50%; padding-left: 20px; }
+
+            .col66_33_esq{ float: left; width: 33.333%; padding-right: 14px; }
+            .col66_33_centre{ float: left; width: 33.333%; padding: 0 14px 0 14px; }
+            .col66_33_dre{ float: left; width: 33.333%; padding-left: 14px; }
+
+    .col50_esq{ float: left; width: 50%; padding: 0 20px 0 10px; }
+    .col50_dre{ float: left; width: 50%; padding: 0 10px 0 20px; }
+
+    .col100{ width: 100%; padding: 0 10px; }
+        .col100_33_esq{ float: left; width: 33.333%; padding: 0 10px; }
+        .col100_33_centre{ float: left; width: 33.333%; padding: 0 10px; }
+        .col100_33_dre{ float: left; width: 33.333%; padding: 0 10px; }
+/*} */

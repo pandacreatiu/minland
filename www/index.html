@@ -9,50 +9,100 @@
     
     <link rel="stylesheet" href="jquery.mobile-1.4.5.css">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="js/swiper.min.css">
+
     <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Open+Sans:300,400,700">
 
     <script src="js/jquery.js"></script>
-    <!-- <script src="js/index.js"></script> -->
     <script src="js/jquery.mobile-1.4.5.min.js"></script>
-
+    <script src="js/index.js"></script>
+    <script src="js/swiper.min.js"></script>
 </head>
 <body>
-<div data-role="page" class="jqm-demos jqm-panel-page" data-quicklinks="true">
 
+<div data-role="page" class="" data-quicklinks="true">
 
+    <!-- HEADER -->
     <div data-role="header" class="header" style="background-color: #66A5A5;">
-
         <div><a href="#leftpanel2" class="bt_left_panel"> <img src="images/bt_menu.png" height="30" width="37"></a></div>
         <div><a href="#rightpanel2" class="bt_right_panel"> <img src="images/lang.png" height="44" width="53"> </a> </div>
-
         <div class="logo"> <img src="images/logo.png" height="59" width="345"> </div>
+    </div>
 
+    <!-- HOME -->
+    <div role="main" class="ui-content container">
+    
+        <div class="home_title title"> </div>
+        <div class="home_subtitle subtitle"> </div>
 
-    </div><!-- /header -->
+        <div class="swiper-container">
+            <div class="swiper-wrapper">
 
-    <div role="main" class="ui-content jqm-content">
+                <div class="swiper-slide">  
+                    <div class="swiper_slider_img"> 
+                        <a href="digimonitor_plus.html">
+                            <img src="images/digimonitor_touch.jpg" height="359" width="504"> </a> </div>
+                        </a>
+                </div>
 
+                <div class="swiper-slide">  
+                    <div class="swiper_slider_img"> <img src="images/digimonitor_plus.jpg" height="359" width="504"> </div>
+                </div>
+
+                <div class="swiper-slide">  
+                    <div class="swiper_slider_img"> <img src="images/digimonitor_2_4.jpg" height="359" width="397"> </div>
+                </div>
+
+                <div class="swiper-slide">  
+                    <div class="swiper_slider_img"> <img src="images/SpinIpCam.jpg" height="359" width="285"> </div>
+                </div>
+
+                <div class="swiper-slide">  
+                    <div class="swiper_slider_img"> <img src="images/everywhereIPCam.jpg" height="359" width="285"> </div>
+                </div>
+
+                <div class="swiper-slide">  
+                    <div class="swiper_slider_img"> <img src="images/thermoadvanced_plus.jpg" height="359" width="285"> </div>
+                </div>
+
+                <div class="swiper-slide">  
+                    <div class="swiper_slider_img"> <img src="images/eMyScale.jpg" height="207" width="600" > </div>
+                </div>
+
+                <div class="swiper-slide">  
+                    <div class="swiper_slider_img"> <img src="images/eMyScale.jpg" height="207" width="600" > </div>
+                </div>
+
+            </div>
             
-    </div><!-- /content -->
+            <div class="swiper-scrollbar"></div>
+           <div class="swiper-pagination"></div>
+        </div>
 
+        <div class="video">
+            <video width="320" height="240" controls autoplay>
+                <source src="videos/eMyBaby_PLV_BeMyBuddy_70_sin desentrelazar.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video> 
+        </div>
 
-    <!-- panels =================================================== -->
-
-    <!-- leftpanel2  -->
-    <div data-role="panel" id="leftpanel2" data-position="left" data-display="push" data-theme="a">
-        <h3>Left Panel: Push</h3>
-        <p>This panel is positioned on the left with the push display mode. The panel markup is <em>after</em> the header, content and footer in the source order.</p>
-        <p>To close, click off the panel, swipe left or right, hit the Esc key, or use the button below:</p>
     </div>
 
-    <!-- rightpanel2  -->
-    <div data-role="panel" id="rightpanel2" data-position="right" data-display="push" data-theme="b">
-        <h3>Right Panel: Push</h3>
-        <p>This panel is positioned on the right with the push display mode. The panel markup is <em>after</em> the header, content and footer in the source order.</p>
-        <p>To close, click off the panel, swipe left or right, hit the Esc key, or use the button below:</p>
+    <!-- footer -->
+    <div data-role="footer" class="footer" style="background-color: #66A5A5;"> 
+        <div class="footer_txt"> </div>
     </div>
+
+    <div data-role="panel" id="leftpanel2" data-position="left" data-display="push" data-theme="a"> <div class="menu_logo"> <img src="images/emybaby_letter.png" height="27" width="152"> </div><a href=""><div class="menu_baby_item"><div class="menu_baby_img"> <img src="images/icon_mibebe.png" height="52" width="66"> </div><div class="menu_baby_txt txt_mibebe"> </div><div class="menu_baby_marca"> <img src="images/marca.png" height="21" width="13"> </div></div></a><a href=""><div class="menu_baby_item"><div class="menu_baby_img"> <img src="images/icon_lafamilia.png" height="52" width="66"> </div><div class="menu_baby_txt txt_lafamilia"> </div> <div class="menu_baby_marca"> <img src="images/marca.png" height="21" width="13"> </div></div></a><a href=""><div class="menu_baby_item"><div class="menu_baby_img"> <img src="images/icon_vigilabebes.png" height="52" width="66"> </div><div class="menu_baby_txt txt_vigilabebes"> </div><div class="menu_baby_marca"> <img src="images/marca.png" height="21" width="13"> </div></div></a><a href=""><div class="menu_baby_item"><div class="menu_baby_img"> <img src="images/icon_termometro.png" height="52" width="66"> </div><div class="menu_baby_txt txt_termometro"> </div><div class="menu_baby_marca"> <img src="images/marca.png" height="21" width="13"> </div></div></a><a href=""><div class="menu_baby_item"><div class="menu_baby_img"> <img src="images/icon_buddy.png" height="52" width="66"> </div><div class="menu_baby_txt txt_buddy"> </div><div class="menu_baby_marca"> <img src="images/marca.png" height="21" width="13"> </div></div></a><a href=""><div class="menu_baby_item"><div class="menu_baby_img"> <img src="images/icon_calendario.png" height="52" width="66"> </div><div class="menu_baby_txt txt_calendario"> </div><div class="menu_baby_marca"> <img src="images/marca.png" height="21" width="13"> </div></div></a><a href=""><div class="menu_baby_item"><div class="menu_baby_img"> <img src="images/icon_fichamedica.png" height="52" width="66"> </div><div class="menu_baby_txt txt_fichamedica"> </div><div class="menu_baby_marca"> <img src="images/marca.png" height="21" width="13"> </div></div></a><a href=""><div class="menu_baby_item"><div class="menu_baby_img"> <img src="images/icon_albumfotos.png" height="52" width="66"> </div><div class="menu_baby_txt txt_albumfotos"> </div><div class="menu_baby_marca"> <img src="images/marca.png" height="21" width="13"> </div></div></a><a href=""><div class="menu_baby_item"><div class="menu_baby_img"> <img src="images/icon_emyscale.png" height="52" width="66"> </div><div class="menu_baby_txt txt_emyscale"> </div><div class="menu_baby_marca"> <img src="images/marca.png" height="21" width="13"> </div></div></a></div>
+
+
+    <div data-role="panel" id="rightpanel2" data-position="right" data-display="overlay" data-theme="b" style="background-color: #2D3854;"><div class="menu_idiomas"><a href="#rightpanel2"><div class="item_idioma" onclick="def_lang("esp");"><div class="item_idioma_flag"> <img src="images/esp.png" height="19" width="18"> </div><div class="item_idioma_txt"> ESPAÑOL </div></div></a><a href="#rightpanel2"> <div class="item_idioma" onclick="def_lang("eng");"><div class="item_idioma_flag"> <img src="images/eng.png" height="19" width="18"> </div><div class="item_idioma_txt"> ENGLISH </div></div></a></div></div>
 
 </div>
+ 
+
 
 </body>
 </html>
+
+
