@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    <title>MINILAND</title>
+    <link rel="shortcut icon" href="favicon.ico">
+    
+    <link rel="stylesheet" href="jquery.mobile-1.4.5.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="js/swiper.min.css">
+
+    <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Open+Sans:300,400,700">
+
+    <script src="js/jquery.js"></script>
+    <script src="js/jquery.mobile-1.4.5.min.js"></script>
+    <script src="js/index.js"></script>
+    <script src="js/swiper.min.js"></script>
+</head>
+<body>
+
+<div data-role="page" class="pages_emybaby" data-quicklinks="true">
+
+    <!-- HEADER -->
+    <div data-role="header" class="header" style="background-color: #66A5A5;">
+        <div><a href="#leftpanel2" class="bt_left_panel"> <img src="images/bt_menu.png" height="30" width="37"></a></div>
+        <div> <a href="index.html" rel="external" class="bt_right_panel"> <img src="images/home.png" height="44"> </a> </div>
+        <div class="logo"> <img src="images/logo.png" height="59" width="345"> </div>
+    </div>
+
+    <!-- HOME -->
+    <div role="main" class="ui-content container">
+    
+    <div class="menu_emybaby">
+    <div class="menu_logo"> <img src="images/emybaby_letter.png" height="27" width="152"> </div><a href="emybaby_mibebe.html" rel="external"><div class="menu_baby_item"><div class="menu_baby_img"> <img src="images/icon_mibebe.png" height="52" width="66"> </div><div class="menu_baby_txt txt_mibebe"> </div><div class="menu_baby_marca"> <img src="images/marca.png" height="21" width="13"> </div></div></a><a href="emybaby_lafamilia.html" rel="external"><div class="menu_baby_item"><div class="menu_baby_img"> <img src="images/icon_lafamilia.png" height="52" width="66"> </div><div class="menu_baby_txt txt_lafamilia"> </div> <div class="menu_baby_marca"> <img src="images/marca.png" height="21" width="13"> </div></div></a><a href="emybaby_vigilabebes.html" rel="external"><div class="menu_baby_item"><div class="menu_baby_img"> <img src="images/icon_vigilabebes.png" height="52" width="66"> </div><div class="menu_baby_txt txt_vigilabebes"> </div><div class="menu_baby_marca"> <img src="images/marca.png" height="21" width="13"> </div></div></a><a href="emybaby_termometro.html" rel="external"><div class="menu_baby_item"><div class="menu_baby_img"> <img src="images/icon_termometro.png" height="52" width="66"> </div><div class="menu_baby_txt txt_termometro"> </div><div class="menu_baby_marca"> <img src="images/marca.png" height="21" width="13"> </div></div></a><a href="emybaby_bemybuddy.html" rel="external"><div class="menu_baby_item"><div class="menu_baby_img"> <img src="images/icon_buddy.png" height="52" width="66"> </div><div class="menu_baby_txt txt_buddy"> </div><div class="menu_baby_marca"> <img src="images/marca.png" height="21" width="13"> </div></div></a><a href="emybaby_calendario.html" rel="external"><div class="menu_baby_item"><div class="menu_baby_img"> <img src="images/icon_calendario.png" height="52" width="66"> </div><div class="menu_baby_txt txt_calendario"> </div><div class="menu_baby_marca"> <img src="images/marca.png" height="21" width="13"> </div></div></a><a href="emybaby_fichamedica.html" rel="external"><div class="menu_baby_item"><div class="menu_baby_img"> <img src="images/icon_fichamedica.png" height="52" width="66"> </div><div class="menu_baby_txt txt_fichamedica"> </div><div class="menu_baby_marca"> <img src="images/marca.png" height="21" width="13"> </div></div></a><a href="emybaby_albumdefotos.html" rel="external"><div class="menu_baby_item"><div class="menu_baby_img"> <img src="images/icon_albumfotos.png" height="52" width="66"> </div><div class="menu_baby_txt txt_albumfotos"> </div><div class="menu_baby_marca"> <img src="images/marca.png" height="21" width="13"> </div></div></a><a href="emybaby_emyscale.html" rel="external"><div class="menu_baby_item"><div class="menu_baby_img"> <img src="images/icon_emyscale.png" height="52" width="66"> </div><div class="menu_baby_txt txt_emyscale"> </div><div class="menu_baby_marca"> <img src="images/marca.png" height="21" width="13"> </div></div></a>
+    </div>
+
+
+    <div class="container_emybaby">
+            
+        <div class="emybaby_title txt_emyscale"> </div>
+        <div class="emybaby_txt cont_emyscale"> </div>
+
+        <div class="swiper-container swiper_emybaby">
+            <div class="swiper-wrapper">
+
+                <div class="swiper-slide">  
+                    <div class="swiper_slider_img emyscale_img01"> <img src="" height="430" width="201"> </div>
+                </div>
+
+                <div class="swiper-slide">  
+                    <div class="swiper_slider_img emyscale_img02"> <img src="" height="430" width="201"> </div>
+                </div>
+
+                <div class="swiper-slide">  
+                    <div class="swiper_slider_img emyscale_img03"> <img src="" height="430" width="201"> </div>
+                </div>
+
+            </div>
+            
+            <div class="swiper-pagination"></div>
+        </div>
+
+    </div>
+
+    </div>
+
+    <!-- footer -->
+    <div data-role="footer" class="footer" style="background-color: #66A5A5;"> 
+        <div class="footer_txt"> </div>
+    </div>
+
+
+</div>
+
+<script type="text/javascript">
+var vid = document.getElementById("myVideo");
+
+window.addEventListener('touchstart', function videoStart() {
+    vid.play();
+    this.removeEventListener('touchstart', videoStart);
+});
+</script>
+
+</body>
+</html>
+
+
