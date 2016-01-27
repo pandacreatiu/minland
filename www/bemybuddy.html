@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    <title>MINILAND</title>
+    <link rel="shortcut icon" href="favicon.ico">
+    
+    <link rel="stylesheet" href="jquery.mobile-1.4.5.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="js/swiper.min.css">
+
+    <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Open+Sans:300,400,700">
+
+    <script src="js/jquery.js"></script>
+    <script src="js/jquery.mobile-1.4.5.min.js"></script>
+    <script src="js/index.js"></script>
+    <script src="js/swiper.min.js"></script>
+</head>
+<body>
+
+<div data-role="page" class="" data-quicklinks="true">
+
+    <!-- HEADER -->
+    <div data-role="header" class="header" style="background-color: #66A5A5;">
+        <div> <a href="#leftpanel2" class="bt_left_panel"> <img src="images/bt_menu.png" height="30" width="37"></a></div>
+        <div> <a href="index.html" rel="external" class="bt_right_panel"> <img src="images/home.png" height="44"> </a> </div>
+        <div class="logo"> <img src="images/logo.png" height="59" width="345"> </div>
+    </div>
+
+    <!-- PRODUCTO -->
+    <div role="main" class="ui-content container">
+
+        <div class="home_title title"> </div>
+        <div class="img_producte"> <img src="images/beMyBuddy.jpg" height="359" width="285"> </div>
+        <div class="bemybuddy subtitle_producto"> </div>
+
+        <div id="temp"></div>
+
+        <div class="video">
+            <video width="320" height="240" id="myVideo" controls autoplay> <source src="videos/eMyBaby.mp4" type="video/mp4"> </video> 
+        </div>
+
+        <div class="product_footer">
+            <div class="icon_product"> 
+                <div class="icon_product_txt txt_termometro"> </div>
+                <img src="images/beMyBuddy_icon.jpg" height="150" width="191"> 
+            </div>
+
+            <div id="slider_txt">
+                <div class="slider_txt_inner sti01"> <div class="stiinner con_bemybuddy_puedes"> </div></div>
+                <div class="slider_txt_inner sti02"> <div class="stiinner podras_reprodocirlos_cuando"> </div></div>
+                <div class="slider_txt_inner sti03"> <div class="stiinner con_la_aplicacion_podras_relajar"> </div></div>
+                <div class="slider_txt_inner sti04"> <div class="stiinner tu_bebe_te_sentira"> </div></div>
+                <div class="slider_txt_inner sti05"> <div class="stiinner va_siempre_contigo"> </div></div>
+            </div>
+        </div>
+
+    </div>
+
+</div>
+ 
+<script type="text/javascript">
+
+var vid = document.getElementById("myVideo");
+
+window.addEventListener('touchstart', function videoStart() {
+    vid.play();
+    this.removeEventListener('touchstart', videoStart);
+});
+
+vid.ontimeupdate = function() { myFunction() };
+
+var curr = 1;
+
+function myFunction() {
+   // document.getElementById("temp").innerHTML = vid.currentTime;
+
+    if (vid.currentTime < 13) {
+        if(curr != 1) { $('.sti0'+curr+' .stiinner').hide(); }
+        $('.sti01 .stiinner').show();
+        curr = 1;
+    }
+
+    if (vid.currentTime > 12 && vid.currentTime < 20) {
+        if(curr != 2) { $('.sti0'+curr+' .stiinner').hide(); }
+        $('.sti02 .stiinner').show();
+        curr = 2;
+    }
+
+    if (vid.currentTime > 19 && vid.currentTime < 31) {
+        if(curr != 3) { $('.sti0'+curr+' .stiinner').hide(); }
+        $('.sti03 .stiinner').show();
+        curr = 3;
+    }
+
+    if (vid.currentTime > 30 && vid.currentTime < 46) {
+        if(curr != 4) { $('.sti0'+curr+' .stiinner').hide(); }
+        $('.sti04 .stiinner').show();
+        curr = 4;
+    }
+
+    if (vid.currentTime > 45) {
+        if(curr != 5) { $('.sti0'+curr+' .stiinner').hide(); }
+        $('.sti05 .stiinner').show();
+        curr = 5;
+    }
+}
+</script>
+
+</body>
+</html>
+
+

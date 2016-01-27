@@ -17,7 +17,7 @@ body {
 
 /* center div variable width */
 .outer{ position: relative; left: 50%; float: left; }
-.inner { position: relative; left: -50%; float: left; }
+.inner{ position: relative; left: -50%; float: left; }
 
 
 .header{ width: 100%; height: 103px; background-color: #66A5A5; }
@@ -34,6 +34,7 @@ body {
     .menu_baby_txt{ float: left; margin-left: 10px; margin-top: 20px; }
     .menu_baby_marca{ float: right; margin-right: 10px; margin-top: 15px; }
 
+
 /* MENU idiomes -------------- */
 .menu_idiomas{ webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; padding: 20px; }
 
@@ -42,11 +43,31 @@ body {
     .item_idioma_txt{ float: left; margin-left: 10px; margin-top: 4px; }
 
 
-.video { width: 100%; max-width: 1200px;  margin: 50px auto; }
+/* video ----------- */
+.video { width: 100%; /*max-width: 1200px;*/  margin: 50px auto; }
 .video video{ width: 100%; height: auto; margin-left: -12px; }
 
 
+/* productos ----------- */
+.img_producte{ text-align: center; margin-top: 20px; }
+.subtitle_producto, .subtitle_producto_margin{ position: relative; z-index: 99; text-align: center; font-size: 25px; color: #4E4E4E; }
+.subtitle_producto{ margin-top: -60px; }
+.subtitle_producto_margin{ margin-top: -10px; }
+
+.product_footer{ width: 100%; height: 150px; background-color: #66A5A5; margin-left: -12px; margin-top: -54px; }
+    .icon_product{ position: absolute; }
+    .icon_product_txt{ position: absolute; color: #fff; text-align: center; bottom: 30px; font-size: 14px; width: 191px; text-align: center; }
+
+    #slider_txt{ float: left; width: 100%; height: 150px; display: table; 
+        webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; padding-left: 200px; padding-right: 20px; }
+    .slider_txt_inner{ color: #fff; font-size: 16px; display: table-cell; height: 150px; vertical-align: middle; text-align: center; line-height: 1.6; }
+    .stiinner{ display: none; }
+
+
 /* footer ---------------------- */
+.store{ }
+.descarga_en{ font-weight: bold; margin-left: 25px; }
+.appstore, .logoapp, .androidstore { float: left; margin: 0 20px; }
 .footer_txt{ color: #fff; text-align: center; padding: 14px 0; font-size: 15px; font-weight: lighter; }
 
 
