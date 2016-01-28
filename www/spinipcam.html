@@ -33,13 +33,13 @@
     <div role="main" class="ui-content container">
 
         <div class="home_title title"> </div>
-        <div class="img_producte"> <img src="images/SpinIpCam.jpg" height="359" width="285"> </div>
+        <div class="img_producte"> <img src="images/SpinIpCam.jpg" height="305"> </div>
         <div class="spinipcam subtitle_producto_margin"> </div>
 
         <div id="temp"></div>
 
         <div class="video">
-            <video width="320" height="240" id="myVideo" controls poster="videos/eMyBaby_PLV_Spin.jpg" loop> 
+            <video width="320" height="240" id="myVideo" controls poster="videos/eMyBaby_PLV_Spin.jpg"> 
                 <source src="videos/eMyBaby_PLV_Spin.mp4" type="video/mp4"> 
             </video> 
         </div>
@@ -71,6 +71,10 @@
 
 var vid = document.getElementById("myVideo");
 vid.ontimeupdate = function() { myFunction() };
+
+vid.onended = function(e) { setTimeout(to_home,1000); };
+function playPause() { if (vid.paused) { vid.play(); } else { vid.pause(); }  }
+function to_home() { window.location.href = 'index.html'; }
 
 var curr = 1;
 

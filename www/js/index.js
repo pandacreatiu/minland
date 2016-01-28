@@ -50,18 +50,13 @@ $(function() {
         pagination: '.swiper-pagination',
         paginationClickable: true,
         grabCursor: true,
-        autoplay: 2500,
-        autoplayDisableOnInteraction: false,
-        loop: true
+        //autoplay: 5000,
+        autoplayDisableOnInteraction: false
+        //loop: true
     });
 
     var vid = document.getElementById("myVideo");
     if (vid){ vid.play(); }
-
-    /*var play = document.getElementById("play");
-    play.addEventListener("click",function(){
-        vid.play();
-    });*/
 
 });
 
@@ -170,7 +165,7 @@ function def_lang(iam){
             $(".con_la_aplicacion_podras_medicion").text("Con la aplicación gratuita eMyBaby además de la medición precisa y sin contacto, dispondrás del registro de las temperaturas siempre a mano");
             
             //footer
-            $(".footer_txt").html("<div style='font-family: myriadwebpro;'>Descubre sus infinitas posibilidades en <a href='http://www.emybaby.com' rel='external' style='color: #fff; font-weight:100; text-decoration:none;font-family: myriadwebpro;'>eMyBaby.com</a></div>"); 
+            $(".footer_txt").html("Descubre sus infinitas posibilidades en <strong>eMyBaby.com</strong>"); 
             break;
        
         case 'eng':
@@ -227,7 +222,7 @@ function def_lang(iam){
  
             //home
             $(".home_title").text("MAKING PARENTS' LIFE A LOT EASIER");
-            $(".home_subtitle").text("Choose and discover our Emybaby products");
+            $(".home_subtitle").text("Choose and discover our eMyBaby products");
             $(".descarga_en").text("DOWNLOAD:");
 
             //productes
@@ -261,7 +256,7 @@ function def_lang(iam){
             $(".con_la_aplicacion_podras_medicion").text("Thermoadvanced plus guarantees accurate and contactless temperature measurements. Track all these results on eMybaby");
             
             //footer
-            $(".footer_txt").html("Know more about endless features at <a href='http://www.emybaby.com' rel='external' style='color: #fff; font-weight:100; text-decoration:none;'>eMyBaby.com</a>"); 
+            $(".footer_txt").html("Know more about endless features at <strong>eMyBaby.com</strong>"); 
             break;
     } 
 }

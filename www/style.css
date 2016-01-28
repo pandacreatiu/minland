@@ -69,9 +69,13 @@ body {
 
 
 /* video ----------- */
-.video { width: 100%; /*max-width: 1200px;*/  margin: 30px auto 10px auto; }
+.video { width: 100%; /*max-width: 1200px;*/  margin: 20px auto 10px auto; cursor: pointer; }
 .video video{ width: 100%; height: auto; margin-left: -12px; }
 
+#myVideo::-webkit-media-controls-fullscreen-button {
+    display: none !important;
+    z-index: 2147483647;
+}
 
 /* productos ----------- */
 .img_producte{ text-align: center; margin-top: 20px; webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; padding: 0 10px; }
@@ -100,14 +104,23 @@ body {
 #leftpanel2 a, .menu_emybaby a{ color: #1F3743; font-size: 11px; letter-spacing: 0.6; }
 #rightpanel2 a{ color: #fff; }
 
-@media only screen and (min-width: 600px) {
+
+
+@media only screen and (min-width: 580px) {
     /* emybaby ----------------------- */
     .pages_emybaby .bt_left_panel{ display: none; }
 
     .container_emybaby{ width: 300px; margin: 20px auto; padding-left: 220px; }
+
+    /* footer ---------------------- */
+    .store{ margin-top: 10px; }
+    .descarga_en{ position: absolute; font-family: myriadwebpro_bold; color: #575758; margin-left: 23px; font-size: 14px; }
+    .appstore, .logoapp, .androidstore { float: left; margin: 0 20px; }
+    .footer_txt{ color: #fff; text-align: center; padding: 14px 0; font-size: 15px; font-weight: 100; font-family: myriadwebpro; letter-spacing: 1px; }
+    .footer_txt a{ color: #fff; font-family: myriadwebpro; font-size: 17px;  }
 }
 
-@media only screen and (max-width: 599px) {
+@media only screen and (max-width: 579px) {
     /* header ------------------- */
     .bt_left_panel{ position: absolute; z-index: 99; left: 5px; top: 36px; }
         .bt_left_panel img{ width: 80%; height: auto; }
@@ -124,22 +137,24 @@ body {
     .pages_emybaby .menu_emybaby{ display: none; }
 
     .container_emybaby{ width: 90%; max-width: 300px; margin: 20px auto 20px 0; }
-}
 
-@media only screen and (min-width: 635px) {
-    /* footer ---------------------- */
-    .store{ margin-top: 10px; }
-    .descarga_en{ position: absolute; font-family: myriadwebpro_bold; color: #575758; margin-left: 23px; font-size: 14px; }
-    .appstore, .logoapp, .androidstore { float: left; margin: 0 20px; }
-    .footer_txt{ color: #fff; text-align: center; padding: 14px 0; font-size: 15px; font-weight: light;  font-family: myriadwebpro; letter-spacing: 1px; }
-    .footer_txt a{ color: #fff; font-family: myriadwebpro_bold; font-size: 17px;  }
-}
 
-@media only screen and (max-width: 634px) {
     /* footer ---------------------- */
     .descarga_en{ display: none; }
     .logoapp {margin-left: -30px; }
     .appstore, .androidstore { display: none; }
-    .footer_txt{ color: #fff; text-align: center; padding: 14px 0; font-size: 15px; font-family: myriadwebpro; }
-    .footer_txt a{ color: #fff;  font-family: myriadwebpro_bold;  }
+    .footer_txt{ color: #fff; text-align: center; padding: 14px 0; font-size: 15px; font-weight: 100; font-family: myriadwebpro; letter-spacing: 1px; }
+    .footer_txt a{ color: #fff; font-family: myriadwebpro; font-size: 17px;  }
+}
+
+
+
+@media only screen and (min-width: 635px) {
+    
+}
+
+@media only screen and (max-width: 634px) {
+    .store{ margin-left: -20px; }
+    .descarga_en{ display: none; }
+    .logoapp img{ width: 95px; height: auto; }
 }
