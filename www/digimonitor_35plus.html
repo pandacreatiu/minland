@@ -39,7 +39,9 @@
         <div id="temp"></div>
 
         <div class="video">
-            <video width="320" height="240" id="myVideo" controls autoplay> <source src="videos/eMyBaby_PLV_Digimonitor_plus.mp4" type="video/mp4"> </video> 
+            <video width="320" height="240" id="myVideo" controls poster="videos/eMyBaby_PLV_Digimonitor_plus.jpg" loop> 
+                <source src="videos/eMyBaby_PLV_Digimonitor_plus.mp4" type="video/mp4"> 
+            </video> 
         </div>
 
         <div class="product_footer">
@@ -65,12 +67,6 @@
 <script type="text/javascript">
 
 var vid = document.getElementById("myVideo");
-
-window.addEventListener('touchstart', function videoStart() {
-    vid.play();
-    this.removeEventListener('touchstart', videoStart);
-});
-
 vid.ontimeupdate = function() { myFunction() };
 
 var curr = 1;
