@@ -62,10 +62,10 @@
     <gap:plugin name="org.apache.cordova.vibration" />
     
     <plugin name="cordova-plugin-device" spec="1.0.1" source="pgb" />
-    -->
+    
     <gap:plugin name="org.apache.cordova.device" spec="0.2.8" source="pgb" />
     <gap:plugin name="com.jaeger.html5video" spec="1.2.1" source="pgb" />
-    <gap:plugin name="com.dawsonloudon.videoplayer" spec="1.0.0" source="pgb" />
+    <gap:plugin name="com.dawsonloudon.videoplayer" spec="1.0.0" source="pgb" />-->
 
 
     <!-- Third party plugins -->

@@ -55,8 +55,8 @@ $(function() {
         //loop: true
     });
 
-    /*var vid = document.getElementById("myVideo");
-    if (vid){ vid.play(); }*/
+    var vid = document.getElementById("myVideo");
+    if (vid){ vid.play(); }
 
 });
 

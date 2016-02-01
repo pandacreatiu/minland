@@ -17,6 +17,10 @@
     <script src="js/jquery.mobile-1.4.5.min.js"></script>
     <script src="js/index.js"></script>
     <script src="js/swiper.min.js"></script>
+
+
+    <link href="js/video-js.css" rel="stylesheet">
+
 </head>
 <body>
 
@@ -110,7 +114,7 @@
 
         <!-- <div class="video" onclick="playPause()"> -->
         <div class="video">
-            <video width="320" height="240" id="myVideo" poster="videos/eMyBaby_PLV_generico.jpg" preload loop autoplay controls>  
+            <video width="320" height="240" id="myVideo" poster="videos/eMyBaby_PLV_generico.jpg" preload loop autoplay controls data-setup="{}">  
                 <source src="videos/eMyBaby_PLV_generico.mp4" type="video/mp4">
             </video> 
         </div>
@@ -144,15 +148,18 @@
 
 </div>
 
+
+<script src="js/video.js"></script>
+
 <script type="text/javascript">
-/*var myVideo = document.getElementById("myVideo"); 
+var myVideo = document.getElementById("myVideo"); 
 
 function playPause() { 
     if (myVideo.paused) 
         myVideo.play(); 
     else 
         myVideo.pause(); 
-}*/
+}
 </script>
 
 </body>
