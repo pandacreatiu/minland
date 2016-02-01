@@ -112,10 +112,9 @@
             <!-- <div class="swiper-pagination"></div> -->
         </div>
 
-        <!-- <div class="video" onclick="playPause()"> -->
-        <div class="video">
-            <video width="320" height="240" id="myVideo" poster="videos/eMyBaby_PLV_generico.jpg" autobuffer loop autoplay controls>  
-                <source src="file:///android_asset/videos/eMyBaby_PLV_generico.mp4" type='video/mp4' >
+        <div class="video" onclick="playPause()">
+            <video width="320" height="240" id="myVideo" poster="videos/eMyBaby_PLV_generico.jpg" autobuffer loop autoplay controls preload="auto">  
+                <source src="videos/eMyBaby_PLV_generico.mp4" type='video/mp4' >
             </video> 
         </div>
 
@@ -147,9 +146,6 @@
     </div>
 
 </div>
-
-<script type="text/javascript" src="cordova-incl.js"></script>
-<script type="text/javascript" src="cordova.js"></script>
 
 <script type="text/javascript">
 var myVideo = document.getElementById("myVideo"); 
