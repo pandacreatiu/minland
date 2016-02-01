@@ -40,14 +40,15 @@
 
     <!-- Plugins -->
 
-    <!-- Core plugins 
+    <!-- Core plugins -->
+    <gap:plugin name="org.apache.cordova.device" />
+    <!-- 
     <gap:plugin name="org.apache.cordova.device" />
     <gap:plugin name="org.apache.cordova.battery-status" />
     <gap:plugin name="org.apache.cordova.camera" />
     <gap:plugin name="org.apache.cordova.media-capture" />
     <gap:plugin name="org.apache.cordova.console" />
     <gap:plugin name="org.apache.cordova.contacts" />
-    <gap:plugin name="org.apache.cordova.device" />
     <gap:plugin name="org.apache.cordova.device-motion" />
     <gap:plugin name="org.apache.cordova.device-orientation" />
     <gap:plugin name="org.apache.cordova.dialogs" />
@@ -60,13 +61,7 @@
     <gap:plugin name="org.apache.cordova.network-information" />
     <gap:plugin name="org.apache.cordova.splashscreen" />
     <gap:plugin name="org.apache.cordova.vibration" />
-    
-    <plugin name="cordova-plugin-device" spec="1.0.1" source="pgb" />
-    
-    <gap:plugin name="org.apache.cordova.device" spec="0.2.8" source="pgb" />
-    <gap:plugin name="com.jaeger.html5video" spec="1.2.1" source="pgb" />
-    <gap:plugin name="com.dawsonloudon.videoplayer" spec="1.0.0" source="pgb" />-->
-
+    -->
 
     <!-- Third party plugins -->
     <!-- A list of available plugins are available at https://build.phonegap.com/plugins -->
