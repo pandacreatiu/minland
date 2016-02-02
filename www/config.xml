@@ -3,12 +3,12 @@
 <!-- config.xml reference: https://build.phonegap.com/docs/config-xml -->
 <widget xmlns     = "http://www.w3.org/ns/widgets"
         xmlns:gap = "http://phonegap.com/ns/1.0"
-        id        = "com.emybaby.eMyBaby_PLV"
+        id        = "com.emybaby.posdidactic"
         version   = "1.0.0">
 
-    <name> eMyBaby_PLV </name>
+    <name> POS Didactic </name>
 
-    <description> eMyBaby_PLV </description>
+    <description> POS Didactic </description>
 
     <author href="http://pandacreatiu.com" email="info@pandacreatiu.com">
         Panda Creatiu

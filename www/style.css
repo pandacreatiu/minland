@@ -91,7 +91,7 @@ body {
 
     #slider_txt{ float: left; width: 100%; height: 150px; display: table; 
         webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; padding-left: 200px; padding-right: 20px; }
-    .slider_txt_inner{ color: #fff; font-size: 17px; display: table-cell; height: 150px; vertical-align: middle; text-align: center; line-height: 1.6; letter-spacing: 1px; }
+    .slider_txt_inner{ color: #fff; font-size: 19px; display: table-cell; height: 150px; vertical-align: middle; text-align: center; line-height: 1.4; letter-spacing: 1px; }
     .stiinner{ display: none; }
 
 
