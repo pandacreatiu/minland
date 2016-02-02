@@ -6,10 +6,6 @@
         id        = "com.emybaby.posdidactic"
         version   = "1.0.0">
 
-    <gap:config-file platform="android" parent="/manifest">
-        <application android:debuggable="false" />
-    </gap:config-file>
-
     <name> POS Didactic </name>
 
     <description> POS Didactic </description>
